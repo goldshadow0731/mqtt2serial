@@ -31,5 +31,5 @@ $ docker build --no-cache --build-arg GOARCH=arm64 -t mqtt2serial:1.0 .
 ## Run  
 
 ```shell=
-docker run -d --privileged -v <Serial Port>:<Serial Port> -e MQTT_BROKER=<Broker IP> -e MQTT_PORT=<Broker Port> -e MQTT_CLIENTID=<Client ID> -e MQTT_RECEIVE_TOPIC=<Request Topic> -e MQTT_SEND_TOPIC=<Response Topic> -e SERIAL_PORT=<Serial Port> -e SERIAL_BAUDRATE=<Serial BaudRate> mqtt2serial:1.0
+$ docker run -d --privileged -v <Serial Port>:<Serial Port> -e MQTT_BROKER=<Broker IP> -e MQTT_PORT=<Broker Port> -e MQTT_CLIENTID=<Client ID> -e MQTT_RECEIVE_TOPIC=<Request Topic> -e MQTT_SEND_TOPIC=<Response Topic> -e SERIAL_PORT=<Serial Port> -e SERIAL_BAUDRATE=<Serial BaudRate> mqtt2serial:1.0
 ```
